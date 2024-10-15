@@ -1,0 +1,78 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Base reset for all common elements */
+html, body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, table, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Font settings */
+html {
+  font-size: 100%;
+}
+
+body {
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  color: #fff; /* White text color for contrast */
+}
+
+/* Styling for links */
+a {
+  text-decoration: none; 
+  color: #007bff; 
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent; 
+  border: none; 
+  outline: none;
+}
+
+input, textarea, select, button {
+  font: inherit;
+  outline: none;
+}
+
+input:focus, textarea:focus, select:focus, button:focus {
+  outline: none;
+}
+
+/* Adding TailwindCSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For hiding spin buttons in number inputs (useful for better styling in forms) */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Custom scrollbar hiding */
+::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Webkit-based browsers (Chrome, Safari, etc.) */
+}
+
+-ms-overflow-style: none; 
+scrollbar-width: none;     
