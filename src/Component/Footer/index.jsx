@@ -2,7 +2,7 @@ import { FaTelegram, FaInstagramSquare, FaTwitterSquare, FaDiscord } from 'react
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-[#0C2B2F] to-[#1A3E43] text-white py-12 flex flex-col items-center space-y-8">
+    <footer className="] text-white py-12 flex flex-col items-center space-y-8">
       {/* dApp Information Section */}
       <div className="max-w-md p-8 bg-[#0C2B2F] border border-teal-400 rounded-lg shadow-lg text-center">
         <h2 className="text-2xl font-semibold mb-4">
@@ -19,7 +19,7 @@ const Footer = () => {
 
       {/* Social Media and Branding Section */}
       <div className="text-center flex flex-col items-center">
-        <img src="EthAiLogo.png" alt="EthAi Logo" className="mb-4" width="60" /> {/* Replace with actual path */}
+        <img src="mobile_logo.png" alt="EthAi Logo" className="mb-4" width="60" /> {/* Replace with actual path */}
         <h3 className="text-xl font-bold mb-4">EthAi</h3>
         
         <div className="flex justify-center space-x-6 text-2xl">
