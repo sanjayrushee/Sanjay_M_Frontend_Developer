@@ -23,12 +23,14 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, table, th, td {
 /* Font settings */
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
   line-height: 1.5;
   font-family: Arial, sans-serif;
   color: #fff; /* White text color for contrast */
+  background-color: #00161D;
 }
 
 /* Styling for links */
@@ -36,7 +38,14 @@ a {
   text-decoration: none; 
   color: #007bff; 
 }
+nav {
+  margin-bottom: 1rem;
+}
 
+ul {
+  margin: 0; 
+  padding: 0; 
+}
 ul, ol {
   list-style: none;
 }
