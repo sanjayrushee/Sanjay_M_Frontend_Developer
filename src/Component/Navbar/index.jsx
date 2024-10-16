@@ -11,20 +11,19 @@ const Navbar = () => {
 
   const handleMenuItemClick = (sectionId) => {
     const section = document.getElementById(sectionId);
-    const navbarHeight = document.querySelector("nav").offsetHeight; // Get navbar height
+    const navbarHeight = document.querySelector("nav").offsetHeight; 
     if (section) {
-      // Scroll to the section and adjust for the navbar height
       window.scrollTo({
-        top: section.offsetTop - navbarHeight, // Adjust for navbar height
+        top: section.offsetTop - navbarHeight,
         behavior: "smooth",
       });
     }
-    setIsMobileMenuOpen(false); // Close mobile menu after clicking
+    setIsMobileMenuOpen(false); 
   };
 
   return (
-    <header className="sticky top-3 z-50 bg-[#0C2B2F] md:bg-inherit mb-8">
-      <nav className="container mx-auto flex items-center justify-between p-4 lg:p-0">
+    <header className="sticky top-2 z-50 bg-[#0C2B2F] md:bg-inherit mx-3 rounded-full ">
+      <nav className="container mx-auto flex items-center justify-between  p-4 lg:p-0">
         {/* Logo Section */}
         <div className="flex items-center space-x-2">
           <img src="mobile_logo.png" alt="Logo" className="w-8 h-8" />
